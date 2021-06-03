@@ -1,0 +1,43 @@
+{
+  "name": "microbitcoin-finance",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@nomiclabs/buidler": "^1.4.8",
+    "@nomiclabs/hardhat-etherscan": "^2.1.2",
+    "@openzeppelin/contracts": "3.4.0",
+    "@openzeppelin/test-helpers": "0.5.6",
+    "@typechain/ethers-v5": "^7.0.0",
+    "@typechain/hardhat": "^2.0.1",
+    "@typechain/truffle-v5": "^5.0.0",
+    "@types/chai": "^4.2.18",
+    "@types/mocha": "^8.2.2",
+    "@types/node": "^15.6.1",
+    "@uniswap/v2-core": "^1.0.1",
+    "@uniswap/v2-periphery": "^1.1.0-beta.0",
+    "ethereumjs-util": "^7.0.10",
+    "hai": "^0.0.3",
+    "hardhat": "^2.3.0",
+    "hardhat-typechain": "^0.3.5",
+    "mocha": "^8.4.0",
+    "ts-generator": "^0.1.1",
+    "ts-node": "^10.0.0",
+    "typechain": "^5.0.0",
+    "typescript": "^4.2.4"
+  },
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.0",
+    "@nomiclabs/hardhat-waffle": "^2.0.0",
+    "chai": "^4.2.0",
+    "ethereum-waffle": "^3.3.0",
+    "ethers": "^5.0.0"
+  },
+  "scripts": {
+    "compile": "npx hardhat compile",
+    "clean": "npx hardhat clean",
+    "test": "npx hardhat test",
+    "deploy": "yarn clean; yarn compile; npx hardhat run --network mainnet scripts/deploy.ts ",
+    "info": "npx hardhat run --network mainnet scripts/info.ts "
+  }
+}
